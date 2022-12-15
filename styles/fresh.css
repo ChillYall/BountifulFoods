@@ -94,6 +94,8 @@ form label.top input:required:valid {
 }
 
 
+
+
 #totalJuice section div, #totalJuice section div h3 {
     background-color: var(--accent-color-white);
     color: var(--primary-color);
@@ -109,6 +111,10 @@ form label.top input:required:valid {
 #thankYou {
     padding: 50px 50px 20px;
     color: var(--accent-color-3);
+}
+
+#totalJuice #order  {
+    font-size: 1rem;
 }
 
 
