@@ -68,6 +68,11 @@ a:hover {
     color: var(--accent-color-2);
 }
 
+h6 {
+    padding: 0;
+    margin: 0;
+}
+
 button, form input.submitBtn  {
     font-size: 2rem;
     background-color: var(--accent-color-2);
