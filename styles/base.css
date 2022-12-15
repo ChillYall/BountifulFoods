@@ -257,7 +257,6 @@ main section, main div {
 #weather-section {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    
 }
 
 #weather-section h3 {
@@ -270,6 +269,11 @@ main section, main div {
     color: var(--accent-color-white);
     border: 5px solid var(--accent-color-white);
     padding: 20px;
+}
+
+#weather-section article div{
+    background-color: var(--accent-color-4);
+
 }
 
 #weather-section img {
