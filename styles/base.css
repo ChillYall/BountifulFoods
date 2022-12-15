@@ -43,7 +43,7 @@ h1, h2, h3, h4, h5, h6, button {
     margin: 0;
 }
 
-p, a, label, input {
+p, a, label, input, dl {
     font-family: var(--paragraph-font);
 }
 
@@ -68,7 +68,7 @@ a:hover {
     color: var(--accent-color-2);
 }
 
-button {
+button, form input.submitBtn  {
     font-size: 2rem;
     background-color: var(--accent-color-2);
     padding: 20px;
@@ -78,13 +78,13 @@ button {
     color: var(--accent-color-white);
 }
 
-button:hover {
+button:hover, form input.submitBtn:hover {
     cursor: pointer;
     background-color: var(--accent-color-1);
     transition: 0.5s;
 }
 
-button:active {
+button:active, form input.submitBtn:active  {
     background-color: var(--accent-color-2);
 }
 
@@ -172,6 +172,10 @@ nav ul li a {
     color: var(--accent-color-white);
 }
 
+#open-tab {
+    color: var(--accent-color-2);
+}
+
 /* Main Styles */
 main {
     background-color: var(--accent-color-white);
@@ -227,15 +231,45 @@ main section {
     color: var(--accent-color-white);
 }
 
-#summary-info picture {
-    height: 30vh;
+#summary-info #ventura-img {
+    /* height: 30%; */
+    overflow: hidden;
 }
 
 #summary-info picture img {
+    max-height: 50%;
     height: 100%;
     width: 100%;
 }
 
+#totalJuice {
+    font-size: 10rem;
+    background-color: var(--accent-color-2);
+    padding: 0 40px 40px;
+    margin: 30px auto;
+}
+
+#weather-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    
+}
+
+#weather-section h3 {
+    grid-area: 1/1/2/3;
+}
+
+#weather-section article {
+    font-size: 1.3rem;
+    background-color: var(--accent-color-4);
+    color: var(--accent-color-white);
+    border: 5px solid var(--accent-color-white);
+    padding: 20px;
+}
+
+#weather-section img {
+    max-width: 50px;
+}
 
 
 /* Footer Styles */
